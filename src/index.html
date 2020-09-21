@@ -18,29 +18,35 @@
 <body>
   <header class="container header">
     <div class="row col">
-      <img src="img/logo.png" class="logo" />
-      <div class="menu">
-        <ul class="nav menu1">
-          <li class="nav-item menu">
-            <a class="nav-link item-navegacao" href="#lancamentos">Lançamentos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link item-navegacao" href="#destaques">Em Destaque</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link item-navegacao" href="#avaliacoes">Avaliações</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link item-navegacao" href="#entrevistas">Entrevistas e Making Of</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link item-navegacao" href="#novidades">Novidades</a>
-          </li>
-          <li class="nav-item search">
-            <input type="text" class="form-control" placeholder="Pesquisar Filme" aria-label="Pesquisar Filme" />
-          </li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="img/logo.png" class="logo" />
+      
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="#lancamentos">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="#destaques">Em Destaque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="#avaliacoes">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="#entrevistas">Entrevistas e Making Of</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="#novidades">Novidades</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0 search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Filme" aria-label="Pesquisar Filme">
+          </form>
+        </div>
+      </nav>
     </div>
   </header>
 
