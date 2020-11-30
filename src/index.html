@@ -12,18 +12,23 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
-  <title>Portal de Filmes</title>
+
+
+  <title>Portal de Filmes - Home</title>
 </head>
 
 <body>
   <header class="container header">
     <div class="row col">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <img src="img/logo.png" class="logo" />
-      
+        <a href="index.html">
+          <img src="img/logo.png" class="logo" />
+        </a>
+
         <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
@@ -41,10 +46,10 @@
             <li class="nav-item">
               <a class="nav-link item-navegacao" href="#novidades">Novidades</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="search.html">Pesquisa</a>
+            </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0 search">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Filme" aria-label="Pesquisar Filme">
-          </form>
         </div>
       </nav>
     </div>
@@ -59,224 +64,8 @@
       <div class="col-12">
         <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselCaptions" data-slide-to="3"></li>
           </ol>
-
           <div class="carousel-inner">
-            <!-- The Joker -->
-            <div class="carousel-item active">
-              <div class="row carrossel-conteudo">
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <iframe class="embed-responsive-item well well-lg video-carrossel"
-                    src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <h2>The Joker</h2>
-                  <div class="row col-12 carrossel-texto">
-                    <p><b>Sinopse: </b> Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma
-                      agência
-                      de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos
-                      problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os
-                      mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas
-                      Wayne (Brett Cullen) é seu maior representante. </p>
-                  </div>
-                  <div class="row col-12">
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Diretor: </b> Todd Philips</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Roteiro: </b> Todd Philips</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Estreia: </b> 2019</p>
-                    </div>
-                  </div>
-                  <div class="row col-12">
-                    <p><b>Elenco: </b></p>
-                    <ul class="list-inline lista-elenco">
-                      <li class="list-inline-item"> Joaquin Phoenix </li>
-                      <li class="list-inline-item"> Brett Cullen </li>
-                      <li class="list-inline-item"> Robert De Niro </li>
-                    </ul>
-                  </div>
-                  <div class="row col-12">
-                    <div class="row col-12">
-                      <p><b>Avaliação: </b></p>
-                      <div class="nota">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Avengers Endgame -->
-            <div class="carousel-item">
-              <div class="row carrossel-conteudo">
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <iframe class="embed-responsive-item well well-lg video-carrossel"
-                    src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <h2>Avengers Endgame</h2>
-                  <div class="row col-12 carrossel-texto">
-                    <p><b>Sinopse: </b> Em Vingadores: Ultimato, após Thanos eliminar metade das criaturas vivas em
-                      Vingadores: Guerra Infinita, os heróis precisam lidar com a dor da perda de amigos e seus entes
-                      queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, o
-                      Capitão América/Steve Rogers (Chris Evans) e a Viúva Negra/Natasha Romanov (Scarlett Johansson)
-                      precisam liderar a resistência contra o titã louco. </p>
-                  </div>
-                  <div class="row col-12">
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Diretor: </b> Joe Russo</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Roteiro: </b> Anthony Russo</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Estreia: </b> 2019</p>
-                    </div>
-                  </div>
-                  <div class="row col-12">
-                    <p><b>Elenco: </b></p>
-                    <ul class="list-inline lista-elenco">
-                      <li class="list-inline-item"> Robert Downey Jr. </li>
-                      <li class="list-inline-item"> Chris Evans </li>
-                      <li class="list-inline-item"> Mark Rufalo </li>
-                    </ul>
-                  </div>
-                  <div class="row col-12">
-                    <div class="row col-12">
-                      <p><b>Avaliação: </b></p>
-                      <div class="nota">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- O Poço -->
-            <div class="carousel-item">
-              <div class="row carrossel-conteudo">
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <iframe class="embed-responsive-item well well-lg video-carrossel"
-                    src="https://www.youtube.com/embed/RlfooqeZcdY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <h2>O Poço</h2>
-                  <div class="row col-12 carrossel-texto">
-                    <p><b>Sinopse: </b> Exibido pela Netflix, O Poço conta a história de um lugar misterioso, uma prisão
-                      indescritível, um buraco profundo. Dois reclusos que vivem em cada nível. Um número desconhecido
-                      de níveis. Uma plataforma descendente contendo comida para todos eles. Uma luta desumana pela
-                      sobrevivência, mas também uma oportunidade de solidariedade. </p>
-                  </div>
-                  <div class="row col-12">
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Diretor: </b>Galder Gaztelu-Urrutia</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Roteiro: </b> Galder Gaztelu-Urrutia</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Estreia: </b> 2020</p>
-                    </div>
-                  </div>
-                  <div class="row col-12">
-                    <p><b>Elenco: </b></p>
-                    <ul class="list-inline lista-elenco">
-                      <li class="list-inline-item"> Ivan Massagué </li>
-                      <li class="list-inline-item"> Zorion Eguileor </li>
-                      <li class="list-inline-item"> Antonia San Juan </li>
-                    </ul>
-                  </div>
-                  <div class="row col-12">
-                    <div class="row col-12">
-                      <p><b>Avaliação: </b></p>
-                      <div class="nota">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Aves de Rapina -->
-            <div class="carousel-item">
-              <div class="row carrossel-conteudo">
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <iframe class="embed-responsive-item well well-lg video-carrossel"
-                    src="https://www.youtube.com/embed/M2LMRXkAZSY" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                  <h2>Aves de Rapina</h2>
-                  <div class="row col-12 carrossel-texto">
-                    <p><b>Sinopse: </b> Em Aves de Rapina - Arlequina e sua Emancipação Fantabulosa, Arlequina (Margot
-                      Robbie), Canário Negro (Jurnee Smollett-Bell), Caçadora (Mary Elizabeth Winstead), Cassandra Cain
-                      e a policial Renée Montoya (Rosie Perez) formam um grupo inusitado de heroínas. Quando um perigoso
-                      criminoso começa a causar destruição em Gotham, as cinco mulheres precisam se unir para defender a
-                      cidade. </p>
-                  </div>
-                  <div class="row col-12">
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Diretor: </b>Cathy Yan</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Roteiro: </b> Cathy Yan</p>
-                    </div>
-                    <div class="col-4 carrossel-texto">
-                      <p><b>Estreia: </b> 2020</p>
-                    </div>
-                  </div>
-                  <div class="row col-12">
-                    <p><b>Elenco: </b></p>
-                    <ul class="list-inline lista-elenco">
-                      <li class="list-inline-item"> Margot Robbie </li>
-                      <li class="list-inline-item"> Mary Elizabeth Winstead </li>
-                      <li class="list-inline-item"> Jurnee Smollett-Bell </li>
-                    </ul>
-                  </div>
-                  <div class="row col-12">
-                    <div class="row col-12">
-                      <p><b>Avaliação: </b></p>
-                      <div class="nota">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -287,7 +76,7 @@
         <div class="col-9 titulo-secao">
           <h2><strong>Em Destaque</strong></h2>
         </div>
-        <div class="col-3 dropdown d-flex align-items-center justify-content-end dropdown-categoria ">
+        <!-- <div class="col-3 dropdown d-flex align-items-center justify-content-end dropdown-categoria ">
           <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Categoria: TODOS
@@ -297,11 +86,11 @@
             <a class="dropdown-item" href="#">Romance</a>
             <a class="dropdown-item" href="#">Comédia</a>
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="row">
-        <div class="col-12 col-xl-3 col-md-6 col-sm-12">
+      <div id="destaque-content" class="row">
+        <!-- <div class="col-12 col-xl-3 col-md-6 col-sm-12">
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="img/poster1.jpg" data-holder-rendered="true">
           </div>
@@ -323,14 +112,14 @@
           <div class="card mb-4 box-shadow">
             <img class="card-img-top" src="img/poster4.jpg" data-holder-rendered="true">
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class="row col-12 d-flex justify-content-end">
+      <!-- <div class="row col-12 d-flex justify-content-end">
         <button class="btn btn-secondary botao-carregar-mais" type="button" aria-haspopup="true" aria-expanded="false">
           + Carregar mais filmes
         </button>
-      </div>
+      </div> -->
     </section>
     <section id="avaliacoes" class="row avaliacao">
       <div class="row col-12">
@@ -397,11 +186,11 @@
         </div>
       </div>
 
-      <div class="row col-12 d-flex justify-content-end">
+      <!-- <div class="row col-12 d-flex justify-content-end">
         <button class="btn btn-secondary botao-carregar-mais" type="button" aria-haspopup="true" aria-expanded="false">
           + Carregar mais avaliações
         </button>
-      </div>
+      </div> -->
     </section>
     <section id="entrevistas" class="row entrevista">
       <div class="row col-12">
@@ -471,11 +260,11 @@
 
       </div>
 
-      <div class="row col-12 d-flex justify-content-end">
+      <!-- <div class="row col-12 d-flex justify-content-end">
         <button class="btn btn-secondary botao-carregar-mais" type="button" aria-haspopup="true" aria-expanded="false">
           + Carregar mais filmes
         </button>
-      </div>
+      </div> -->
     </section>
     <section id="novidades" class="row novidade">
       <div class="row col-12 col-xl-8 col-md-12 col-sm-12">
@@ -587,12 +376,18 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

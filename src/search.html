@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  
+
+  <title>Portal de Filmes - Home</title>
+</head>
+
+<body>
+  <header class="container header">
+    <div class="row col">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html">
+            <img src="img/logo.png" class="logo" />
+          </a>
+      
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="index.html#lancamentos">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="index.html#destaques">Em Destaque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="index.html#avaliacoes">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="index.html#entrevistas">Entrevistas e Making Of</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="index.html#novidades">Novidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link item-navegacao" href="index.htmlsearch.html">Pesquisa</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <div class="col-12 titulo-secao centralizado">
+        <h1><strong>Pesquisa</strong></h1>
+      </div>
+
+      <div class="d-flex justify-content-center pesquisa">
+        <form id="form-search" class="d-flex">
+            <input id="input-search" type="text" class="form-control" >
+            <button type="submit" class="btn btn-success ml-3">Pesquisar</button>
+        </form>
+      </div>
+
+    <div class="container">
+        <div id="search-result" class="row pt-3">
+        </div>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <p>
+      Copyright 2020 - Disciplina de Desenvolvimento de Interfaces WEB -
+      <strong>ICEI PUC Minas</strong>
+      <img src="img/logo.png" class="logo float-right" />
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  
+  <script type="module" src="./js/search.js"></script>
+</body>
+</html>
