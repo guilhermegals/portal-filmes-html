@@ -6,7 +6,15 @@ var slideCounter = 0;
 $(document).ready(function() {
     get(`movie/upcoming?api_key=2aa1a4f182dc4b9f91af39aed9a812a9&language=pt-BR&page=1`, fillCarrousel);
 
-    get(`movie/top_rated?api_key=2aa1a4f182dc4b9f91af39aed9a812a9&language=pt-BR&page=1`, fillDestaque)
+    get(`movie/top_rated?api_key=2aa1a4f182dc4b9f91af39aed9a812a9&language=pt-BR&page=1`, fillDestaque);
+
+    $("#botao-carregar-mais").click(function(){
+        $("#destaque-content").empty();
+        var page = $("#destaque-content-page").text();
+        page++;
+        $("#destaque-content-page").text(page);
+        get(`movie/top_rated?api_key=2aa1a4f182dc4b9f91af39aed9a812a9&language=pt-BR&page=${page}`, fillDestaque);
+    });
 });
 
 function fillCarrousel(){
@@ -85,7 +93,13 @@ function fillVideo(){
     var movieVideo = JSON.parse(this.responseText);
 
     if(movieVideo.results.length > 0){
-        $(`#carrousel-video-${movieVideo.id}`).attr("src",`https://www.youtube.com/embed/${movieVideo.results[0].key}`);
+        var firstVideo = movieVideo.results[0];
+        var baseUrlVideo = "https://www.youtube.com/embed/lXxUPo9tRao";
+
+        if(firstVideo.site === "YouTube") baseUrlVideo = `https://www.youtube.com/embed/${firstVideo.key}`;
+        else if(firstVideo.site === "Vimeo") baseUrlVideo = `https://player.vimeo.com/video/${firstVideo.key}`;
+
+        $(`#carrousel-video-${movieVideo.id}`).attr("src", baseUrlVideo);
     }else{
         $(`#carrousel-video-${movieVideo.id}`).attr("src","https://www.youtube.com/embed/lXxUPo9tRao");
     }
