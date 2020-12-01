@@ -12,9 +12,17 @@ function fillSearch(){
     $("#search-result").empty();
     var result = JSON.parse(this.responseText);
 
-    result.results.forEach(function(movieResult) {
-        get(`movie/${movieResult.id}?api_key=2aa1a4f182dc4b9f91af39aed9a812a9&language=pt-BR`, fillCard);
-    });
+    if(result.results.length > 0){
+        result.results.forEach(function(movieResult) {
+            get(`movie/${movieResult.id}?api_key=2aa1a4f182dc4b9f91af39aed9a812a9&language=pt-BR`, fillCard);
+        });
+    }else{
+        var movieNotFound = `<div class="col-12 titulo-secao centralizado" style="margin-bottom: 50px">
+                               <h3><strong>Não foi encontrado nenhum filme :(</strong></h3>
+                             </div>`;
+        $("#search-result").append(movieNotFound);
+    }
+    
 }
 
 function fillCard(){
